@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "corona-yardim",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Türkiye'deki COVID-19 salgınının önüne geçilebilmesi için gönüllü sivil yardımlaşma platformu.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "M. Ege Ercan <macitegeercan@gmail.com>",
   "dependencies": {
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
@@ -22,7 +22,11 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "corona",
+    "turkey",
+    "virus",
+    "yardim",
+    "help"
   ],
   "license": "MIT",
   "scripts": {
@@ -36,9 +40,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/eggei/corona-yardim"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/eggei/corona-yardim/issues"
   }
 }
