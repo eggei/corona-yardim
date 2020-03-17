@@ -36,6 +36,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built for Goodness
+          <a style={{ display: 'block'}} href="mailto:info@coronayardim.com" target="_top">info@coronayardim.com</a>
         </footer>
       </div>
     </>
