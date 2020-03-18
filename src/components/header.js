@@ -7,6 +7,7 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `crimson`,
       marginBottom: `1.45rem`,
+      height: 120,
     }}
   >
     <div
@@ -24,7 +25,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          {siteTitle} <h4>Türkiye</h4>
         </Link>
       </h1>
     </div>
