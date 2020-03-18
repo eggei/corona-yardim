@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Logo from "./logo"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -13,8 +14,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle} <h4>Türkiye</h4>
+          <Logo />
         </Link>
       </h1>
     </div>
