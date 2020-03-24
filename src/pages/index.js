@@ -15,17 +15,7 @@ const IndexPage = ({ history }) => (
     {/* <Button variant="contained" color="primary">
       Primary
     </Button> */}
-    <div className="navbar" style={{ display: "flex" }}>
-      <Link to="" className="nav" disabled>
-        Güncel Durum
-      </Link>
-      <Link to="/" className="nav" disabled>
-        Yardım İstekleri
-      </Link>
-      <Link to="/" className="nav" disabled>
-        Gönüllüler
-      </Link>
-    </div>
+
     <h3>Merhaba,</h3>
     <h4>bu site henüz yapım aşamasındadır ve</h4>
     <p>

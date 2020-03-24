@@ -6,6 +6,7 @@
   "author": "M. Ege Ercan <macitegeercan@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-google-analytics": "^2.2.0",
