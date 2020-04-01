@@ -44,11 +44,8 @@ export default function SignUp() {
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
-            <LockOutlinedIcon />
-          </Avatar>
           <Typography component="h1" variant="h5">
-            Sign up
+            Yeni Üye Kaydı
           </Typography>
           <form className={classes.form} noValidate>
             <Grid container spacing={2}>
@@ -60,7 +57,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="firstName"
-                  label="First Name"
+                  label="Ad"
                   autoFocus
                 />
               </Grid>
@@ -70,7 +67,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="lastName"
-                  label="Last Name"
+                  label="Soyad"
                   name="lastName"
                   autoComplete="lname"
                 />
@@ -81,7 +78,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="email"
-                  label="Email Address"
+                  label="Email Adresi"
                   name="email"
                   autoComplete="email"
                 />
@@ -92,18 +89,10 @@ export default function SignUp() {
                   required
                   fullWidth
                   name="password"
-                  label="Password"
+                  label="Şifre"
                   type="password"
                   id="password"
                   autoComplete="current-password"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox value="allowExtraEmails" color="primary" />
-                  }
-                  label="I want to receive inspiration, marketing promotions and updates via email."
                 />
               </Grid>
             </Grid>
@@ -114,12 +103,12 @@ export default function SignUp() {
               color="primary"
               className={classes.submit}
             >
-              Sign Up
+              Kaydol
             </Button>
             <Grid container justify="flex-end">
               <Grid item>
-                <Link href="/signin" variant="body2">
-                  Already have an account? Sign in
+                <Link href="/giris" variant="body2">
+                  Hesabım var. Giriş yap.
                 </Link>
               </Grid>
             </Grid>

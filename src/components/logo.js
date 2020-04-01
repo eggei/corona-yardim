@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 /*
@@ -27,11 +27,14 @@ const Logo = () => {
   `)
 
   return (
-    <Img
-      fixed={data.logoImage.childImageSharp.fixed}
-      alt="Corona Yardim Logo"
-      title="Corona Yardım Logo"
-    />
+    <Link to="/" >
+      <Img
+        fixed={data.logoImage.childImageSharp.fixed}
+        alt="Corona Yardim Logo"
+        title="Corona Yardım Logo"
+        style={{ marginBottom: 0 }}
+      />
+    </Link>
   )
 }
 

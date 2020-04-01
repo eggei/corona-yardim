@@ -7,8 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
-
+import { useStaticQuery, graphql } from "gatsby"
+// import LinearProgress from "@material-ui/core/LinearProgress"
 import Header from "./header"
 import "./layout.css"
 import { Typography } from "@material-ui/core"
@@ -19,9 +19,9 @@ function Copyright() {
       {"Copyright © "}
       {new Date().getFullYear()}
       {" | "}Built for goodness{" | "}
-      <Link color="inherit" href="mailto:info@coronayardim.com" target="_top">
+      <a to="mailto:info@coronayardim.com" target="_top">
         info@coronayardim.com
-      </Link>{" "}
+      </a>{" "}
       {"."}
     </Typography>
   )
@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      {/* <LinearProgress variant="indeterminate" /> */}
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -50,7 +51,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-         <Copyright />
+          <Copyright />
         </footer>
       </div>
     </>

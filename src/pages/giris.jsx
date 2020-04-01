@@ -46,11 +46,11 @@ const SignIn = props => {
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
+          {/* <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
-          </Avatar>
+          </Avatar> */}
           <Typography component="h1" variant="h5">
-            Sign in
+            Üye Girişi
           </Typography>
           <form className={classes.form} target="/register" noValidate>
             <TextField
@@ -59,7 +59,7 @@ const SignIn = props => {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              label="Email Adresi"
               name="email"
               autoComplete="email"
               autoFocus
@@ -70,14 +70,14 @@ const SignIn = props => {
               required
               fullWidth
               name="password"
-              label="Password"
+              label="Şifre"
               type="password"
               id="password"
               autoComplete="current-password"
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
+              label="Beni hatırla"
             />
             <Button
               type="submit"
@@ -86,17 +86,17 @@ const SignIn = props => {
               color="primary"
               className={classes.submit}
             >
-              Sign In
+              Giriş
             </Button>
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
-                  Forgot password?
+                  Şifremi unuttum
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/signup" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                <Link href="/uyelik" variant="body2">
+                  Üye ol
                 </Link>
               </Grid>
             </Grid>
