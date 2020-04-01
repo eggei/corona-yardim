@@ -22,8 +22,8 @@ export const CovidStatus = () => {
           style={{
             overflow: "hidden",
             height: 64,
-            padding: "0 16px",
             width: "100%",
+            borderRadius: 4,
           }}
         >
           <iframe
@@ -47,9 +47,10 @@ export const CovidStatus = () => {
       <div
         style={{
           overflow: "hidden",
-          padding: "0 16px",
           width: "100%",
           height: 300,
+          borderRadius: 4,
+          margin: "20px 0"
         }}
       >
         <iframe

@@ -1,36 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import { CovidStatus } from "../components/covid-status"
-
+// import CssBaseline from "@material-ui/core/CssBaseline"
+// import Typography from "@material-ui/core/Typography"
+// import Container from "@material-ui/core/Container"
 // import Button from "@material-ui/core"
 
 const IndexPage = ({ history }) => (
   <Layout>
     <SEO title="Anasayfa" />
-
-    {/* <Button variant="contained" color="primary">
-      Primary
-    </Button> */}
-    <div className="navbar" style={{ display: "flex" }}>
-      <Link to="" className="nav" disabled>
-        Güncel Durum
-      </Link>
-      <Link to="/" className="nav" disabled>
-        Yardım İstekleri
-      </Link>
-      <Link to="/" className="nav" disabled>
-        Gönüllüler
-      </Link>
-    </div>
-    <h3>Merhaba,</h3>
-    <h4>bu site henüz yapım aşamasındadır ve</h4>
+    <br />
     <p>
       Türkiye'deki COVID-19 salgınının önüne geçilebilmesi için gönüllü, sivil
-      yardımlaşma platformu girişimidir.{" "}
+      yardımlaşma platformu.{" "}
       <a
         href="mailto:info@coronayardim.com"
         target="_top"
@@ -39,14 +25,8 @@ const IndexPage = ({ history }) => (
         info@coronayardim.com
       </a>
     </p>
-
-    {/* <br /> */}
     <hr />
-    <CovidStatus />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      {/* <Image /> */}
-    </div>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div> */}
   </Layout>
 )
 
