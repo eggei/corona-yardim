@@ -1,16 +1,8 @@
 import React from "react"
-// import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
-import { CovidStatus } from "../components/covid-status"
-// import CssBaseline from "@material-ui/core/CssBaseline"
-// import Typography from "@material-ui/core/Typography"
-// import Container from "@material-ui/core/Container"
-// import Button from "@material-ui/core"
 
-const IndexPage = ({ history }) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Anasayfa" />
     <br />
@@ -26,7 +18,6 @@ const IndexPage = ({ history }) => (
       </a>
     </p>
     <hr />
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div> */}
   </Layout>
 )
 

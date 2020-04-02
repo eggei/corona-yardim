@@ -12,15 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import { Typography } from "@material-ui/core"
-import {
-  StylesProvider,
-  createGenerateClassName,
-} from "@material-ui/core/styles"
-
-const generateClassName = createGenerateClassName({
-  productionPrefix: "c",
-})
-
 
 function Copyright() {
   return (
@@ -28,7 +19,7 @@ function Copyright() {
       {"Copyright © "}
       {new Date().getFullYear()}
       {" | "}Built for goodness{" | "}
-      <a to="mailto:info@coronayardim.com" target="_top">
+      <a href="mailto:info@coronayardim.com" target="_top">
         info@coronayardim.com
       </a>{" "}
       {"."}
@@ -50,7 +41,6 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <LinearProgress variant="indeterminate" /> */}
-      <StylesProvider generateClassName={generateClassName}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -64,7 +54,6 @@ const Layout = ({ children }) => {
             <Copyright />
           </footer>
         </div>
-      </StylesProvider>
     </>
   )
 }

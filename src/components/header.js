@@ -2,10 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Logo from "./logo"
-import Navigation from "../pages/navigation"
 import Menu from "@material-ui/core/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
-import useMediaQuery from "@material-ui/core/useMediaQuery"
 import {
   AppBar,
   Toolbar,
