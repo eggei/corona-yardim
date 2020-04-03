@@ -5,6 +5,12 @@
  */
 
 // You can delete this file if you're not using it
-import "./src/css/styles.css";
+import "./src/css/styles.css"
 import NProgress from "nprogress"
+NProgress.configure({
+  showSpinner: false,
+})
 NProgress.start()
+window.addEventListener("load", () => {
+  NProgress.done()
+})

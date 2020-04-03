@@ -114,9 +114,14 @@ export default function SignUp() {
             </Button>
             <Grid container justify="flex-end">
               <Grid item>
-                <Link href="/giris" variant="body2">
+                <Button
+                  href="/giris"
+                  variant="outlined"
+                  size="small"
+                  style={{ textTransform: "capitalize" }}
+                >
                   Hesabım var. Giriş yap.
-                </Link>
+                </Button>
               </Grid>
             </Grid>
           </form>
